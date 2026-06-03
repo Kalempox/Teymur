@@ -1,0 +1,26 @@
+node_modules/
+dist/
+.claude/
+*.local
+.env
+.env.*
+
+# IDE
+.vscode/
+.idea/
+*.suo
+*.user
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs
+*.log
+npm-debug.log*
+pnpm-debug.log*
+
+# Cache
+.vite/
+coverage/
