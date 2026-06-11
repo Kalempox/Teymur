@@ -329,15 +329,12 @@ const DEFAULT_CONTENT: SiteContent = {
     ],
     visionTitle: "Herkesin deneyimlemek istediği marka olmak",
     visionTexts: [
-      "Misafirlerin kalplerinde özel bir yer edinmiş, yerelde ve ulusalda adı kaliteyle özdeşleşmiş, ödüllerle ve başarılarla taçlanmış; büyüyerek herkesin deneyimlemek istediği bir marka haline gelmek.",
-      "Bu vizyonun temelinde misafire duyulan derin saygı yatmaktadır. Teymur Continental Hotel olarak her konaklamayı sıradan bir otel deneyiminin çok ötesine taşımayı hedefliyoruz.",
-      "Ulusal ve uluslararası arenada Türk otelciliğinin gurur duyduğu bir referans noktası olarak anılmak; elde ettiğimiz her ödül ve takdiri misafirlerimize verdiğimiz değerin somut yansıması olarak görüyoruz.",
+      "Misafirlerimizin kalplerinde özel bir yer edinmiş, yerelden ulusala ödül ve başarılarla taçlanmış; herkesin tekrar deneyimlemek istediği markamızı gelecek nesillere aktarmak.",
     ],
     missionTitle: "Kültürü, konforu ve misafirperverliği bir arada yaşatmak",
     missionTexts: [
-      "Gaziantep'in tarihî dokusu, kültürel zenginlikleri ve gastronomi mirasını modern konforla buluşturarak; iş ve turizm amaçlı tüm misafirlerimize konforlu, güvenli ve misafirperver bir konaklama deneyimi sunmak.",
-      "Yerel değerleri yaşatan, çağdaş otelcilik anlayışını benimseyen hizmetimizle hem şehrimize hem de misafirlerimize katma değer yaratmak.",
-      "Çevreye duyarlı uygulamalar ve sürdürülebilir turizm anlayışını kurum kültürümüzün ayrılmaz bir parçası kılmak; Gaziantep'i dünyaya tanıtan bir köprü olmak.",
+      "Gaziantep'in tarihî dokusu, kültürel zenginlikleri ve gastronomi mirasını modern konforla buluşturarak; iş ve turizm amaçlı tüm misafirlerimize güler yüzlü, kaliteli, güvenli ve misafirperver bir konaklama deneyimi yaşatmak.",
+      "Yerel değerleri yaşatan, çağdaş otelcilik anlayışını benimseyen hizmetimizle hem şehrimize hem de misafirlerimize eşsiz bir deneyim sunmak.",
     ],
   },
   rooms: [
