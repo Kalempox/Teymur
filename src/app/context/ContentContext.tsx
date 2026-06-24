@@ -327,11 +327,11 @@ const DEFAULT_CONTENT: SiteContent = {
         img: "https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?w=900&q=85&fit=crop",
       },
     ],
-    visionTitle: "Herkesin deneyimlemek istediği marka olmak",
+    visionTitle: "Vizyon",
     visionTexts: [
       "Misafirlerimizin kalplerinde özel bir yer edinmiş, yerelden ulusala ödül ve başarılarla taçlanmış; herkesin tekrar deneyimlemek istediği markamızı gelecek nesillere aktarmak.",
     ],
-    missionTitle: "Kültürü, konforu ve misafirperverliği bir arada yaşatmak",
+    missionTitle: "Misyon",
     missionTexts: [
       "Gaziantep'in tarihî dokusu, kültürel zenginlikleri ve gastronomi mirasını modern konforla buluşturarak; iş ve turizm amaçlı tüm misafirlerimize güler yüzlü, kaliteli, güvenli ve misafirperver bir konaklama deneyimi yaşatmak.",
       "Yerel değerleri yaşatan, çağdaş otelcilik anlayışını benimseyen hizmetimizle hem şehrimize hem de misafirlerimize eşsiz bir deneyim sunmak.",
