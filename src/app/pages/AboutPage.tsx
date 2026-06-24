@@ -235,9 +235,11 @@ export function AboutPage() {
 
             {/* Vizyon */}
             <div style={{ marginBottom: "72px" }}>
-              <h3 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "clamp(26px, 2.8vw, 42px)", fontWeight: 400, color: DARK, marginBottom: "24px", lineHeight: 1.2 }}>
-                {about.visionTitle}
-              </h3>
+              {about.visionTitle && (
+                <h3 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "clamp(26px, 2.8vw, 42px)", fontWeight: 400, color: DARK, marginBottom: "24px", lineHeight: 1.2 }}>
+                  {about.visionTitle}
+                </h3>
+              )}
               {about.visionTexts.map((text, i) => (
                 <p key={i} style={{ fontFamily: "'Inter', sans-serif", fontSize: "15px", lineHeight: 1.95, color: MID, marginBottom: "20px" }}>
                   {text}
@@ -254,9 +256,11 @@ export function AboutPage() {
 
             {/* Misyon */}
             <div style={{ marginBottom: "0" }}>
-              <h3 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "clamp(26px, 2.8vw, 42px)", fontWeight: 400, color: DARK, marginBottom: "24px", lineHeight: 1.2 }}>
-                {about.missionTitle}
-              </h3>
+              {about.missionTitle && (
+                <h3 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "clamp(26px, 2.8vw, 42px)", fontWeight: 400, color: DARK, marginBottom: "24px", lineHeight: 1.2 }}>
+                  {about.missionTitle}
+                </h3>
+              )}
               {about.missionTexts.map((text, i) => (
                 <p key={i} style={{ fontFamily: "'Inter', sans-serif", fontSize: "15px", lineHeight: 1.95, color: MID, marginBottom: "20px" }}>
                   {text}
