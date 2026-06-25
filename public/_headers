@@ -1,0 +1,7 @@
+# Hashlenmis asset dosyalari (index-XXXX.js / .css) icerigi degismez -> uzun sureli onbellek
+/assets/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# HTML ve diger tum yollar her zaman sunucudan dogrulansin -> guncellemeler aninda gorunur
+/*
+  Cache-Control: public, max-age=0, must-revalidate
