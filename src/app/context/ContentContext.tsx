@@ -3,6 +3,7 @@ import { useLang } from "./LanguageContext";
 
 const BASE_ROOM = "https://www.teymurcontinentalhotel.com/panel/uploads/rooms_v/original/";
 const BASE_PROD = "https://www.teymurcontinentalhotel.com/panel/uploads/product_v/400x400/";
+const BASE_PROD_O = "https://www.teymurcontinentalhotel.com/panel/uploads/product_v/original/";
 const BASE_HALL = "https://www.teymurcontinentalhotel.com/panel/uploads/product_v/400x400/";
 
 export interface Room {
@@ -425,7 +426,7 @@ const DEFAULT_CONTENT: SiteContent = {
       type: "À La Carte",
       feature: "Çocuk Oyun Alanı",
       desc: "Otelimiz bünyesinde bulunan Sof Restaurant, Gaziantep ve dünya mutfağını profesyonel bar hizmetiyle misafirlerine sunmaktadır.",
-      imgs: [BASE_PROD + "a-la-carte-ve-cocuk-2.jpg", BASE_PROD + "7.jpg"],
+      imgs: [BASE_PROD_O + "a-la-carte-ve-cocuk-2.jpg", BASE_PROD_O + "a-la-carte-ve-cocuk-3.jpg", BASE_PROD_O + "a-la-carte-ve-cocuk.jpg"],
     },
     {
       id: 2,
@@ -436,7 +437,7 @@ const DEFAULT_CONTENT: SiteContent = {
       type: "Açık Büfe",
       feature: "Şehir Manzarası",
       desc: "Teymur Continental Hotel misafirleri için açık büfe kahvaltımız; çeşitliliği, lezzeti ve yöreselliğiyle şehir manzarası eşliğinde unutulmaz bir sabah şöleni sunuyor.",
-      imgs: [BASE_PROD + "kahvalti--2.jpg", BASE_PROD + "6.jpg"],
+      imgs: [BASE_PROD_O + "kahvalti--2.jpg", BASE_PROD_O + "kahvalti--3.jpg", BASE_PROD_O + "kahvalti-1.jpg"],
     },
     {
       id: 3,
@@ -447,7 +448,7 @@ const DEFAULT_CONTENT: SiteContent = {
       type: "Bar",
       feature: "Canlı Müzik",
       desc: "Teymur Continental Hotel'in Bar & Lounge'ı, şık atmosferi ve geniş içecek menüsüyle unutulmaz akşamlar sunar.",
-      imgs: [BASE_PROD + "7.jpg", BASE_PROD + "a-la-carte-ve-cocuk-2.jpg"],
+      imgs: [BASE_PROD_O + "7.jpg", BASE_PROD_O + "8.jpg", BASE_PROD_O + "9.jpg"],
     },
   ],
   halls: [
@@ -460,7 +461,7 @@ const DEFAULT_CONTENT: SiteContent = {
       area: "1305 m²",
       type: "Balo & Kongre",
       desc: "1305 m² kullanım alanına sahip, 1250 kişilik kapasitesiyle bu özel salonumuzda ister görkemli bir ziyafet, isterseniz samimi bir kutlama gerçekleştirebilirsiniz.",
-      imgs: [BASE_HALL + "beylerbeyi.jpg", BASE_HALL + "beylerbeyi--21.jpg"],
+      imgs: [BASE_PROD_O + "beylerbeyi--21.jpg", BASE_PROD_O + "beylerbeyi--31.jpg"],
     },
     {
       id: 2,
@@ -471,7 +472,7 @@ const DEFAULT_CONTENT: SiteContent = {
       area: "512 m²",
       type: "Çok Amaçlı Salon",
       desc: "512 m² kullanım alanına sahip, 350 kişilik kapasitesiyle salonumuzda ister görkemli bir ziyafet, isterseniz samimi bir kutlama gerçekleştirebilirsiniz.",
-      imgs: [BASE_HALL + "hayad-3.jpg"],
+      imgs: [BASE_PROD_O + "hayad-31.jpg", BASE_PROD_O + "beylerbeyi--21.jpg"],
     },
     {
       id: 3,
@@ -482,7 +483,7 @@ const DEFAULT_CONTENT: SiteContent = {
       area: "125 m²",
       type: "Toplantı Salonu",
       desc: "125 m² kullanım alanına sahip, 90 kişilik kapasitesiyle toplantı, düğün, nişan ve doğum günü gibi etkinlikleriniz için ideal bir atmosfer sunan salonumuz.",
-      imgs: [BASE_HALL + "5e6d3d45-aac1-4484-8f40-803b86003c3b.jpg"],
+      imgs: [BASE_PROD_O + "salonlar1.jpg", BASE_PROD_O + "salonlar2.jpg"],
     },
     {
       id: 4,
@@ -493,7 +494,7 @@ const DEFAULT_CONTENT: SiteContent = {
       area: "125 m²",
       type: "Toplantı Salonu",
       desc: "125 m² kullanım alanına sahip, 90 kişilik kapasitesiyle küçük ölçekli toplantılar ve özel etkinlikler için ideal ortam.",
-      imgs: [BASE_HALL + "a.jpg"],
+      imgs: [BASE_PROD_O + "ipekyolu-11.jpg", BASE_PROD_O + "salonlar2.jpg"],
     },
   ],
   wellness: {
@@ -739,10 +740,10 @@ const DEFAULT_CONTENT: SiteContent = {
       { id: "events",   side: "left",  href: "#",           labelTr: "Etkinlikler", labelEn: "Events",  labelAr: "الفعاليات",
         dropdown: { headingTr: "Toplantı & Etkinlikler", headingEn: "Meetings & Events", headingAr: "الاجتماعات والفعاليات", descTr: "Her ölçekte etkinliğiniz için profesyonel hizmet sunuyoruz.", descEn: "We offer professional service for events of any scale.", descAr: "نقدم خدمة احترافية لجميع الفعاليات.", viewAllTr: "Tüm Salonları Gör", viewAllEn: "View All Halls", viewAllAr: "عرض جميع القاعات", viewAllHref: "/etkinlikler",
           photos: [
-            { src: "https://www.teymurcontinentalhotel.com/panel/uploads/product_v/400x400/beylerbeyi.jpg",                            labelTr: "Beylerbeyi Balo Ve Kongre", labelEn: "Beylerbeyi Ballroom",    labelAr: "قاعة بيليربيي",            href: "/etkinlikler/beylerbeyi-balo-ve-kongre-salonu" },
-            { src: "https://www.teymurcontinentalhotel.com/panel/uploads/product_v/400x400/hayad-3.jpg",                               labelTr: "Hayad Salonu",             labelEn: "Hayad Hall",             labelAr: "قاعة هياد",                href: "/etkinlikler/hayad-salonu" },
-            { src: "https://www.teymurcontinentalhotel.com/panel/uploads/product_v/400x400/5e6d3d45-aac1-4484-8f40-803b86003c3b.jpg", labelTr: "Continental House Salonu", labelEn: "Continental House Hall", labelAr: "قاعة كونتيننتال هاوس",     href: "/etkinlikler/continental-house-salonu" },
-            { src: "https://www.teymurcontinentalhotel.com/panel/uploads/product_v/400x400/a.jpg",                                     labelTr: "İpekyolu Salonu",          labelEn: "İpekyolu Hall",          labelAr: "قاعة إيبكيولو",            href: "/etkinlikler/ipekyolu-salonu" },
+            { src: BASE_PROD_O + "beylerbeyi--21.jpg", labelTr: "Beylerbeyi Balo Ve Kongre", labelEn: "Beylerbeyi Ballroom",    labelAr: "قاعة بيليربيي",            href: "/etkinlikler/beylerbeyi-balo-ve-kongre-salonu" },
+            { src: BASE_PROD_O + "hayad-31.jpg",       labelTr: "Hayad Salonu",             labelEn: "Hayad Hall",             labelAr: "قاعة هياد",                href: "/etkinlikler/hayad-salonu" },
+            { src: BASE_PROD_O + "salonlar1.jpg",      labelTr: "Continental House Salonu", labelEn: "Continental House Hall", labelAr: "قاعة كونتيننتال هاوس",     href: "/etkinlikler/continental-house-salonu" },
+            { src: BASE_PROD_O + "ipekyolu-11.jpg",    labelTr: "İpekyolu Salonu",          labelEn: "İpekyolu Hall",          labelAr: "قاعة إيبكيولو",            href: "/etkinlikler/ipekyolu-salonu" },
           ],
         },
       },
