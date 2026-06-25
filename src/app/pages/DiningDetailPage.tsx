@@ -20,7 +20,7 @@ const VENUES: Record<string, VenueData> = {
     feature: "Çocuk Oyun Alanı",
     tagline: "Gaziantep ve dünya mutfağı bir arada.",
     desc: "Otelimiz bünyesinde bulunan Sof Restaurant, Gaziantep ve dünya mutfağını profesyonel bar hizmetiyle misafirlerine sunmaktadır. Gaziantep'in eşsiz yöresel lezzetlerini modern bir yorum ile bir araya getiren restoranımız, hem iş hem de özel yemekler için ideal bir atmosfer sunmaktadır. Aynı zamanda minik misafirlerimizin eğlenceye doyamadığı çocuk oyun alanı ile 7/24 hizmet sunmaktadır.",
-    imgs: [BASE + "a-la-carte-ve-cocuk-2.jpg", BASE + "7.jpg"],
+    imgs: [BASE + "a-la-carte-ve-cocuk-2.jpg", BASE + "a-la-carte-ve-cocuk-3.jpg", BASE + "a-la-carte-ve-cocuk.jpg"],
     amenities: ["7/24 HİZMET", "À LA CARTE MENÜ", "ÇOCUK OYUN ALANI", "BAR HİZMETİ", "GAZİANTEP MUTFAĞı", "DÜNYA MUTFAĞı", "KABLOSUZ İNTERNET", "VALE HİZMETİ"],
   },
   "kahvalti": {
@@ -30,7 +30,7 @@ const VENUES: Record<string, VenueData> = {
     feature: "Şehir Manzarası",
     tagline: "Şehir manzarası eşliğinde sabah şöleni.",
     desc: "Teymur Continental Hotel misafirleri için açık büfe kahvaltımız; çeşitliliği, lezzeti ve yöreselliğiyle 07.00 - 11.00 saatleri arasında şehir manzarası eşliğinde unutulmaz bir sabah şöleni sunuyor. Yöresel Gaziantep lezzetleri, taze meyveler, organik ürünler ve zengin kahvaltı çeşitleriyle güne en iyi başlangıcı yapın.",
-    imgs: [BASE + "kahvalti--2.jpg", BASE + "6.jpg"],
+    imgs: [BASE + "kahvalti--2.jpg", BASE + "kahvalti--3.jpg", BASE + "kahvalti-1.jpg"],
     amenities: ["07:00–11:00 ARASI", "AÇIK BÜFE", "ŞEHİR MANZARASI", "YÖRESEL LEZZETLER", "TAZE MEYVE & SEBZE", "ORGANİK ÜRÜNLER", "KABLOSUZ İNTERNET", "ÖZEL DİYET MENÜSÜ"],
   },
   "bar-lounge": {
@@ -40,7 +40,7 @@ const VENUES: Record<string, VenueData> = {
     feature: "Canlı Müzik",
     tagline: "Gece yarısı özel karışımlar ve seçkin içkiler.",
     desc: "Teymur Continental Hotel'in Bar & Lounge'ı, şık atmosferi ve geniş içecek menüsüyle unutulmaz akşamlar sunar. Özenle hazırlanmış kokteyller, seçkin şaraplar ve yerel lezzetlerle dolu bir deneyim için davetlisiniz. Uzman bartenderlarımızın hazırladığı özel karışımlar ve canlı müzik eşliğinde geceyi taçlandırın.",
-    imgs: [BASE + "7.jpg", BASE + "a-la-carte-ve-cocuk-2.jpg"],
+    imgs: [BASE + "7.jpg", BASE + "8.jpg", BASE + "9.jpg"],
     amenities: ["18:00–01:00 ARASI", "KOKTEYL MENÜSÜ", "SEÇKİN ŞARAPLAR", "CANLI MÜZİK", "ATLAŞTIRMALIKLAR", "ÖZEL ETKİNLİKLER", "KABLOSUZ İNTERNET", "VALE HİZMETİ"],
   },
 };

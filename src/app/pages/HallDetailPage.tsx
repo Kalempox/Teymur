@@ -18,7 +18,7 @@ const HALLS: Record<string, HallData> = {
     capacity: "1250 Kişi", area: "1305 m²", type: "Balo & Kongre",
     tagline: "Gaziantep'in en prestijli etkinlik salonu.",
     desc: "Teymur Continental Hotel, özel davetlerinizde fark yaratmanız için mükemmel mekanları ve kusursuz planlamayı bir arada sunuyor. 1305 m² kullanım alanına sahip, 1250 kişilik kapasitesiyle bu özel salonumuzda ister görkemli bir ziyafet, isterseniz samimi bir kutlama gerçekleştirebilirsiniz. Toplantı, düğün, nişan ve doğum günü gibi etkinlikleriniz için ideal bir atmosfer sunan salonumuz, size unutulmaz anlar yaşatır.",
-    imgs: [HALL_BASE + "beylerbeyi.jpg", HALL_BASE + "beylerbeyi--21.jpg"],
+    imgs: [HALL_BASE + "beylerbeyi--21.jpg", HALL_BASE + "beylerbeyi--31.jpg"],
     features: ["1250 KİŞİ KAPASİTESİ", "1305 M² ALAN", "TAM DONANIMLI SAHNE", "PROFESYONEL SES", "IŞIK SİSTEMİ", "CATERING HİZMETİ", "KLİMA SİSTEMİ", "GENİŞ OTOPARK"],
   },
   "hayad-salonu": {
@@ -26,7 +26,7 @@ const HALLS: Record<string, HallData> = {
     capacity: "350 Kişi", area: "512 m²", type: "Çok Amaçlı",
     tagline: "Esnek yapısıyla her organizasyona uyum sağlar.",
     desc: "Teymur Continental Hotel, özel davetlerinizde fark yaratmanız için mükemmel mekanları ve kusursuz planlamayı bir arada sunuyor. 512 m² kullanım alanına sahip, 350 kişilik kapasitesiyle salonumuzda ister görkemli bir ziyafet, isterseniz samimi bir kutlama gerçekleştirebilirsiniz. Açılıp kapanabilir sistemi sayesinde küçük ya da büyük tüm organizasyonlarınıza uyum sağlayan bu özel salon, toplantı, düğün, nişan ve doğum günü gibi etkinlikleriniz için ideal bir atmosfer sunar ve size unutulmaz anlar yaşatır.",
-    imgs: [HALL_BASE + "hayad-3.jpg"],
+    imgs: [HALL_BASE + "hayad-31.jpg", HALL_BASE + "beylerbeyi--21.jpg"],
     features: ["350 KİŞİ KAPASİTESİ", "512 M² ALAN", "AÇILIR KAPANIR SİSTEM", "ESNEK KONFİGÜRASYON", "SES SİSTEMİ", "CATERING HİZMETİ", "KLİMA SİSTEMİ", "GENİŞ OTOPARK"],
   },
   "continental-house-salonu": {
@@ -34,7 +34,7 @@ const HALLS: Record<string, HallData> = {
     capacity: "90 Kişi", area: "125 m²", type: "Toplantı",
     tagline: "Şık ve işlevsel toplantı ortamı.",
     desc: "Teymur Continental Hotel, özel davetlerinizde fark yaratmanız için mükemmel mekanları ve kusursuz planlamayı bir arada sunuyor. 125 m² kullanım alanına sahip, 90 kişilik kapasitesiyle bu salonumuzda ister görkemli bir ziyafet, isterseniz samimi bir kutlama gerçekleştirebilirsiniz. Toplantı, düğün, nişan ve doğum günü gibi etkinlikleriniz için ideal bir atmosfer sunan salonumuz, size unutulmaz anlar yaşatır.",
-    imgs: [HALL_BASE + "5e6d3d45-aac1-4484-8f40-803b86003c3b.jpg"],
+    imgs: [HALL_BASE + "salonlar1.jpg", HALL_BASE + "salonlar2.jpg"],
     features: ["90 KİŞİ KAPASİTESİ", "125 M² ALAN", "PROJEKSİYON SİSTEMİ", "SES SİSTEMİ", "CATERING HİZMETİ", "KLİMA SİSTEMİ", "KABLOSUZ İNTERNET", "GENİŞ OTOPARK"],
   },
   "ipekyolu-salonu": {
@@ -42,16 +42,16 @@ const HALLS: Record<string, HallData> = {
     capacity: "90 Kişi", area: "125 m²", type: "Toplantı",
     tagline: "Küçük ölçekli etkinlikler için ideal mekan.",
     desc: "Teymur Continental Hotel, özel davetlerinizde fark yaratmanız için mükemmel mekanları ve kusursuz planlamayı bir arada sunuyor. 125 m² kullanım alanına sahip, 90 kişilik kapasitesiyle bu salonumuzda ister görkemli bir ziyafet, isterseniz samimi bir kutlama gerçekleştirebilirsiniz. Toplantı, düğün, nişan ve doğum günü gibi etkinlikleriniz için ideal bir atmosfer sunan salonumuz, size unutulmaz anlar yaşatır.",
-    imgs: [HALL_BASE + "a.jpg"],
+    imgs: [HALL_BASE + "ipekyolu-11.jpg", HALL_BASE + "salonlar2.jpg"],
     features: ["90 KİŞİ KAPASİTESİ", "125 M² ALAN", "PROJEKSİYON SİSTEMİ", "SES SİSTEMİ", "CATERING HİZMETİ", "KLİMA SİSTEMİ", "KABLOSUZ İNTERNET", "GENİŞ OTOPARK"],
   },
 };
 
 const ALL_HALLS = [
-  { slug: "beylerbeyi-balo-ve-kongre-salonu", title: "Beylerbeyi Balo Ve Kongre Salonu", img: HALL_BASE + "beylerbeyi.jpg",                            capacity: "1250 Kişi", area: "1305 m²" },
-  { slug: "hayad-salonu",                     title: "Hayad Salonu",                     img: HALL_BASE + "hayad-3.jpg",                                capacity: "350 Kişi",  area: "512 m²"  },
-  { slug: "continental-house-salonu",         title: "Continental House Salonu",         img: HALL_BASE + "5e6d3d45-aac1-4484-8f40-803b86003c3b.jpg",  capacity: "90 Kişi",   area: "125 m²"  },
-  { slug: "ipekyolu-salonu",                  title: "İpekyolu Salonu",                  img: HALL_BASE + "a.jpg",                                      capacity: "90 Kişi",   area: "125 m²"  },
+  { slug: "beylerbeyi-balo-ve-kongre-salonu", title: "Beylerbeyi Balo Ve Kongre Salonu", img: HALL_BASE + "beylerbeyi--21.jpg", capacity: "1250 Kişi", area: "1305 m²" },
+  { slug: "hayad-salonu",                     title: "Hayad Salonu",                     img: HALL_BASE + "hayad-31.jpg",       capacity: "350 Kişi",  area: "512 m²"  },
+  { slug: "continental-house-salonu",         title: "Continental House Salonu",         img: HALL_BASE + "salonlar1.jpg",      capacity: "90 Kişi",   area: "125 m²"  },
+  { slug: "ipekyolu-salonu",                  title: "İpekyolu Salonu",                  img: HALL_BASE + "ipekyolu-11.jpg",    capacity: "90 Kişi",   area: "125 m²"  },
 ];
 
 function FeatureIcon({ name }: { name: string }) {

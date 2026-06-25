@@ -1045,15 +1045,24 @@ const DEFAULT_CONTENT: SiteContent = {
 };
 
 const STORAGE_KEY = "teymur_cms_content";
+const VERSION_KEY = "teymur_cms_version";
+// Yeni icerik/gorsel deploy edildiginde bu degeri artir; boylece tarayicilardaki
+// eski localStorage onbellegi otomatik temizlenir ve guncel varsayilanlar yuklenir.
+const CONTENT_VERSION = "2026-06-25-2";
 
 function loadContent(): SiteContent {
   try {
+    const storedVersion = localStorage.getItem(VERSION_KEY);
     const stored = localStorage.getItem(STORAGE_KEY);
-    if (stored) {
+    // Surum eslesiyorsa kayitli (admin tarafindan duzenlenmis) icerigi kullan
+    if (stored && storedVersion === CONTENT_VERSION) {
       const parsed = JSON.parse(stored);
       // Deep merge to ensure new default fields appear
       return deepMerge(DEFAULT_CONTENT, parsed);
     }
+    // Surum eski ya da yoksa: bayat onbellegi at, guncel varsayilanlari kullan
+    localStorage.removeItem(STORAGE_KEY);
+    localStorage.setItem(VERSION_KEY, CONTENT_VERSION);
   } catch {
     // ignore
   }
