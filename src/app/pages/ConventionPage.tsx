@@ -7,7 +7,7 @@ const WHITE = "#ffffff";
 const DARK  = "#1c1209";
 const MID   = "#5a4a3a";
 const MUTED = "#999999";
-const HALL_BASE = "https://www.teymurcontinentalhotel.com/panel/uploads/product_v/400x400/";
+const HALL_BASE = "/panel/uploads/product_v/400x400/";
 
 const halls = [
   {

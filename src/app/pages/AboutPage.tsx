@@ -10,11 +10,11 @@ const CREAM = "#f5f2ed";
 const BORDER = "rgba(219,190,140,0.25)";
 
 const HERO_IMGS = [
-  "https://www.teymurcontinentalhotel.com/panel/uploads/pages_v/original/11.jpg",
-  "https://www.teymurcontinentalhotel.com/assets/img/photo-title.jpg",
-  "https://www.teymurcontinentalhotel.com/panel/uploads/rooms_v/original/16.jpg",
-  "https://www.teymurcontinentalhotel.com/panel/uploads/rooms_v/original/1.jpg",
-  "https://www.teymurcontinentalhotel.com/panel/uploads/rooms_v/original/11.jpg",
+  "/panel/uploads/pages_v/original/11.jpg",
+  "/assets/img/photo-title.jpg",
+  "/panel/uploads/rooms_v/original/16.jpg",
+  "/panel/uploads/rooms_v/original/1.jpg",
+  "/panel/uploads/rooms_v/original/11.jpg",
 ];
 
 const services = [
@@ -23,14 +23,14 @@ const services = [
     desc: "Teymur Continental Hotel'in lüks odaları ve süitleri, konfor ve zarafeti ön planda tutarak huzurlu bir dinlenme ortamı sunar. Şehrin eşsiz ruhuna olan yakınlığımız bizi farklı kılan en önemli unsurdur.",
     link: "/odalar",
     linkText: "Odalar & Süitler",
-    img: "https://www.teymurcontinentalhotel.com/panel/uploads/rooms_v/original/16.jpg",
+    img: "/panel/uploads/rooms_v/original/16.jpg",
   },
   {
     title: "Sof Restaurant – Fine Dining",
     desc: "Gaziantep mutfağının en seçkin örneklerini uluslararası lezzetlerle harmanlayan ödüllü restoranımızda unutulmaz bir fine dining deneyimi yaşayın. UNESCO Gastronomik Şehri'nin eşsiz tatları masanıza geliyor.",
     link: "/restoran/sof-restaurant",
     linkText: "Restoranlar",
-    img: "https://www.teymurcontinentalhotel.com/panel/uploads/product_v/400x400/a-la-carte-ve-cocuk-2.jpg",
+    img: "/panel/uploads/product_v/400x400/a-la-carte-ve-cocuk-2.jpg",
   },
   {
     title: "Spa & Sağlık Merkezi",
@@ -140,7 +140,7 @@ export function AboutPage() {
         <div className="about-gap about-building-wrap" style={{ height: "48px" }} />
         <section style={{ height: "58vh", overflow: "hidden", margin: "0 48px" }} className="about-building-img about-building-wrap">
           <img
-            src="https://www.teymurcontinentalhotel.com/panel/uploads/pages_v/original/11.jpg"
+            src="/panel/uploads/pages_v/original/11.jpg"
             alt="Teymur Continental Hotel binası"
             style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "center 30%", display: "block" }}
           />

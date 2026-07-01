@@ -1,0 +1,18 @@
+@font-face {
+   font-family: "Avenir Medium";
+   src: url("fonts/Avenir Medium.woff2") format("woff2");
+   font-weight: normal;
+   font-style: normal;
+}
+@font-face {
+   font-family: "Avenir Next Medium";
+   src: url("fonts/Avenir Next Medium.woff2") format("woff2");
+   font-weight: normal;
+   font-style: normal;
+}
+@font-face {
+   font-family: "STIX Two Math Regular";
+   src: url("fonts/STIX Two Math Regular.woff2") format("woff2");
+   font-weight: normal;
+   font-style: normal;
+}

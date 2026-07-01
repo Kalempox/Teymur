@@ -4,7 +4,7 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 import { useLang } from "../context/LanguageContext";
 import { useContent } from "../context/ContentContext";
 
-const BASE_IMG = "https://www.teymurcontinentalhotel.com/panel/uploads/rooms_v/original/";
+const BASE_IMG = "/panel/uploads/rooms_v/original/";
 
 const WHITE = "#ffffff";
 const DARK  = "#1c1209";

@@ -5,7 +5,7 @@ import { ChevronLeft, ChevronRight, Users, Maximize2, Music, Wifi, Car, Volume2,
 const BG   = "#f9f9f9";
 const DARK = "#1c1209";
 const MID  = "#5a4a3a";
-const HALL_BASE = "https://www.teymurcontinentalhotel.com/panel/uploads/product_v/400x400/";
+const HALL_BASE = "/panel/uploads/product_v/400x400/";
 
 interface HallData {
   title: string; capacity: string; area: string; type: string;

@@ -5,7 +5,7 @@ import { ChevronLeft, ChevronRight, Clock, Utensils, Users, Wifi, Music, Coffee,
 const BG   = "#f9f9f9";
 const DARK = "#1c1209";
 const MID  = "#5a4a3a";
-const BASE = "https://www.teymurcontinentalhotel.com/panel/uploads/product_v/400x400/";
+const BASE = "/panel/uploads/product_v/400x400/";
 
 interface VenueData {
   title: string; hours: string; type: string; feature: string;

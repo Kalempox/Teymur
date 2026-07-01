@@ -9,7 +9,7 @@ import {
 
 // ─── Playwright‑verified exact values ────────────────────────────────────────
 const BG   = "#f9f9f9";   // rgb(249,249,249) – body bg
-const BASE = "https://www.teymurcontinentalhotel.com/panel/uploads/rooms_v/original/";
+const BASE = "/panel/uploads/rooms_v/original/";
 
 // ─── Room data ────────────────────────────────────────────────────────────────
 interface RoomData {

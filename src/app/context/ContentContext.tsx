@@ -1,10 +1,10 @@
 import React, { createContext, useContext, useState, useEffect } from "react";
 import { useLang } from "./LanguageContext";
 
-const BASE_ROOM = "https://www.teymurcontinentalhotel.com/panel/uploads/rooms_v/original/";
-const BASE_PROD = "https://www.teymurcontinentalhotel.com/panel/uploads/product_v/400x400/";
-const BASE_PROD_O = "https://www.teymurcontinentalhotel.com/panel/uploads/product_v/original/";
-const BASE_HALL = "https://www.teymurcontinentalhotel.com/panel/uploads/product_v/400x400/";
+const BASE_ROOM = "/panel/uploads/rooms_v/original/";
+const BASE_PROD = "/panel/uploads/product_v/400x400/";
+const BASE_PROD_O = "/panel/uploads/product_v/original/";
+const BASE_HALL = "/panel/uploads/product_v/400x400/";
 
 export interface Room {
   id: number;
@@ -275,22 +275,22 @@ const DEFAULT_CONTENT: SiteContent = {
     experience360Title: "360° Sanal Tur",
     experience360Subtitle: "Odalarımızı, lobimizi ve tüm tesislerimizi sanal olarak keşfedin.",
     experience360PreviewImg: "https://images.unsplash.com/photo-1646991761123-d83ce47c30c9?w=1920&q=85&fit=crop",
-    experience360IframeUrl: "https://www.teymurcontinentalhotel.com/360/",
+    experience360IframeUrl: "/360/index.html",
   },
   about: {
     heroImages: [
-      "https://www.teymurcontinentalhotel.com/panel/uploads/pages_v/original/11.jpg",
-      "https://www.teymurcontinentalhotel.com/assets/img/photo-title.jpg",
-      "https://www.teymurcontinentalhotel.com/panel/uploads/rooms_v/original/16.jpg",
-      "https://www.teymurcontinentalhotel.com/panel/uploads/rooms_v/original/1.jpg",
-      "https://www.teymurcontinentalhotel.com/panel/uploads/rooms_v/original/11.jpg",
+      "/panel/uploads/pages_v/original/11.jpg",
+      "/assets/img/photo-title.jpg",
+      "/panel/uploads/rooms_v/original/16.jpg",
+      "/panel/uploads/rooms_v/original/1.jpg",
+      "/panel/uploads/rooms_v/original/11.jpg",
     ],
     heroTitle: "Gaziantep'in Kalbinde Beş Yıldızlı Lüks",
     heroText1:
       "Tarihi İpekyolu'nun kadim ve lezzet dolu durağı Gaziantep'in merkezinde, geleneksel misafirperverliği modern lüksle buluşturan bir 5 yıldızlı oteliz. Kültür, lezzet ve iş dünyasının kesişim noktasındayız.",
     heroText2:
       "Kurumsal kimliğimiz; şehrin zengin tarihine saygı duyan, üstün hizmet ve koşulsuz misafir memnuniyetini merkezine alan bir yaklaşımla tanımlanır.",
-    heroImg: "https://www.teymurcontinentalhotel.com/assets/img/photo-title.jpg",
+    heroImg: "/assets/img/photo-title.jpg",
     storyLabel: "Kurumsal",
     storyTitle: "Sürdürülebilir turizm anlayışımızı her geçen gün daha ileriye taşımaktan gurur duyuyoruz",
     storyText1:
@@ -304,7 +304,7 @@ const DEFAULT_CONTENT: SiteContent = {
         desc: "Teymur Continental Hotel'in lüks odaları ve süitleri, konfor ve zarafeti ön planda tutarak huzurlu bir dinlenme ortamı sunar.",
         link: "/odalar",
         linkText: "Odalar & Süitler",
-        img: "https://www.teymurcontinentalhotel.com/panel/uploads/rooms_v/original/16.jpg",
+        img: "/panel/uploads/rooms_v/original/16.jpg",
       },
       {
         title: "Sof Restaurant – Fine Dining",
@@ -499,28 +499,28 @@ const DEFAULT_CONTENT: SiteContent = {
   ],
   wellness: {
     heroTitle: "Sağlık & Spa",
-    heroImg: "https://www.teymurcontinentalhotel.com/panel/uploads/product_v/400x400/6.jpg",
+    heroImg: "/panel/uploads/product_v/400x400/6.jpg",
     galleryItems: [
-      { img: "https://www.teymurcontinentalhotel.com/panel/uploads/product_v/400x400/6.jpg", category: "Sağlık Kulübü", title: "Spa & Sağlık", desc: "Ruhunuzu ve bedeninizi yenileyecek özenle tasarlanan spa merkezimizde, Uzakdoğulu masörlerimizle kendinizi özel hissedeceğiniz bir deneyim sunuyoruz." },
-      { img: "https://www.teymurcontinentalhotel.com/panel/uploads/product_v/original/3.jpg", category: "Türk Hamamı", title: "Osmanlı Ritüeli", desc: "Geleneksel kese ve köpük masajı ile derin arınma deneyimi. Buhar odaları ve mermer göbek taşı." },
-      { img: "https://www.teymurcontinentalhotel.com/panel/uploads/product_v/original/4.jpg", category: "Masaj", title: "Aromaterapi Masajı", desc: "Doğal uçucu yağlarla beden ve zihnin tam dinginliğe ulaşması için özel hazırlanmış tedavi." },
-      { img: "https://www.teymurcontinentalhotel.com/panel/uploads/product_v/original/5.jpg", category: "Sauna & Buhar", title: "Isı Tedavileri", desc: "Sauna ve buhar odalarında derin arınma. Beden ve ruhun yenilenmesi için ideal ortam." },
-      { img: "https://www.teymurcontinentalhotel.com/panel/uploads/product_v/original/2.jpg", category: "Yüzme", title: "Kapalı Havuz", desc: "Sıcaklık kontrollü kapalı yüzme havuzumuzda kendinizi yenileyin." },
-      { img: "https://www.teymurcontinentalhotel.com/panel/uploads/product_v/original/11.jpg", category: "Fitness", title: "Fitness Merkezi", desc: "Son teknoloji ekipmanlar ve uzman eğitmenlerle hedeflerinize ulaşın." },
+      { img: "/panel/uploads/product_v/400x400/6.jpg", category: "Sağlık Kulübü", title: "Spa & Sağlık", desc: "Ruhunuzu ve bedeninizi yenileyecek özenle tasarlanan spa merkezimizde, Uzakdoğulu masörlerimizle kendinizi özel hissedeceğiniz bir deneyim sunuyoruz." },
+      { img: "/panel/uploads/product_v/original/3.jpg", category: "Türk Hamamı", title: "Osmanlı Ritüeli", desc: "Geleneksel kese ve köpük masajı ile derin arınma deneyimi. Buhar odaları ve mermer göbek taşı." },
+      { img: "/panel/uploads/product_v/original/4.jpg", category: "Masaj", title: "Aromaterapi Masajı", desc: "Doğal uçucu yağlarla beden ve zihnin tam dinginliğe ulaşması için özel hazırlanmış tedavi." },
+      { img: "/panel/uploads/product_v/original/5.jpg", category: "Sauna & Buhar", title: "Isı Tedavileri", desc: "Sauna ve buhar odalarında derin arınma. Beden ve ruhun yenilenmesi için ideal ortam." },
+      { img: "/panel/uploads/product_v/original/2.jpg", category: "Yüzme", title: "Kapalı Havuz", desc: "Sıcaklık kontrollü kapalı yüzme havuzumuzda kendinizi yenileyin." },
+      { img: "/panel/uploads/product_v/original/11.jpg", category: "Fitness", title: "Fitness Merkezi", desc: "Son teknoloji ekipmanlar ve uzman eğitmenlerle hedeflerinize ulaşın." },
     ],
     otherServices: [
-      { slug: "spa-hamam", title: "Spa & Hamam", img: "https://www.teymurcontinentalhotel.com/panel/uploads/product_v/400x400/5.jpg" },
-      { slug: "fitness", title: "Fitness Merkezi", img: "https://www.teymurcontinentalhotel.com/panel/uploads/product_v/400x400/11.jpg" },
+      { slug: "spa-hamam", title: "Spa & Hamam", img: "/panel/uploads/product_v/400x400/5.jpg" },
+      { slug: "fitness", title: "Fitness Merkezi", img: "/panel/uploads/product_v/400x400/11.jpg" },
     ],
   },
   spa: {
     heroTitle: "SPA & HAMAM",
     heroImgs: [
-      "https://www.teymurcontinentalhotel.com/panel/uploads/product_v/original/5.jpg",
-      "https://www.teymurcontinentalhotel.com/panel/uploads/product_v/original/3.jpg",
-      "https://www.teymurcontinentalhotel.com/panel/uploads/product_v/original/4.jpg",
-      "https://www.teymurcontinentalhotel.com/panel/uploads/product_v/original/6.jpg",
-      "https://www.teymurcontinentalhotel.com/panel/uploads/product_v/original/11.jpg",
+      "/panel/uploads/product_v/original/5.jpg",
+      "/panel/uploads/product_v/original/3.jpg",
+      "/panel/uploads/product_v/original/4.jpg",
+      "/panel/uploads/product_v/original/6.jpg",
+      "/panel/uploads/product_v/original/11.jpg",
     ],
     sections: [
       {
@@ -529,11 +529,11 @@ const DEFAULT_CONTENT: SiteContent = {
         desc: "Teymur Continental Hotel Spa & Sağlık, yüzyıllık Osmanlı hamam geleneğini çağdaş tedavilerle bir araya getirerek eşsiz bir iyileşme deneyimi sunar. Uzman terapistlerimiz size özel hazırlanmış programlarla beden ve ruhunuzu yeniler.",
         hours: "07:00 – 22:00",
         imgs: [
-          "https://www.teymurcontinentalhotel.com/panel/uploads/product_v/original/3.jpg",
-          "https://www.teymurcontinentalhotel.com/panel/uploads/product_v/original/6.jpg",
-          "https://www.teymurcontinentalhotel.com/panel/uploads/product_v/original/4.jpg",
-          "https://www.teymurcontinentalhotel.com/panel/uploads/product_v/original/5.jpg",
-          "https://www.teymurcontinentalhotel.com/panel/uploads/product_v/original/11.jpg",
+          "/panel/uploads/product_v/original/3.jpg",
+          "/panel/uploads/product_v/original/6.jpg",
+          "/panel/uploads/product_v/original/4.jpg",
+          "/panel/uploads/product_v/original/5.jpg",
+          "/panel/uploads/product_v/original/11.jpg",
         ],
       },
       {
@@ -542,9 +542,9 @@ const DEFAULT_CONTENT: SiteContent = {
         desc: "Osmanlı döneminden günümüze taşınan geleneksel hamam ritüelleriyle derin bir arınma deneyimi yaşayın. Geleneksel kese, köpük masajı, buhar odaları ve mermer göbek taşı ile bedeninizi ve ruhunuzu yenileyin.",
         hours: "",
         imgs: [
-          "https://www.teymurcontinentalhotel.com/panel/uploads/product_v/original/5.jpg",
-          "https://www.teymurcontinentalhotel.com/panel/uploads/product_v/original/4.jpg",
-          "https://www.teymurcontinentalhotel.com/panel/uploads/product_v/original/3.jpg",
+          "/panel/uploads/product_v/original/5.jpg",
+          "/panel/uploads/product_v/original/4.jpg",
+          "/panel/uploads/product_v/original/3.jpg",
         ],
       },
       {
@@ -553,8 +553,8 @@ const DEFAULT_CONTENT: SiteContent = {
         desc: "Uzman ekibimiz tarafından uygulanan geleneksel kese ve peeling ritüelleri, cildinizi derinlemesine temizler ve yeniler. Osmanlı hamam geleneğinin en özel uygulamalarını yaşayın.",
         hours: "",
         imgs: [
-          "https://www.teymurcontinentalhotel.com/panel/uploads/product_v/original/6.jpg",
-          "https://www.teymurcontinentalhotel.com/panel/uploads/product_v/original/11.jpg",
+          "/panel/uploads/product_v/original/6.jpg",
+          "/panel/uploads/product_v/original/11.jpg",
         ],
       },
     ],
@@ -562,11 +562,11 @@ const DEFAULT_CONTENT: SiteContent = {
   fitness: {
     heroTitle: "FİTNESS",
     heroImgs: [
-      "https://www.teymurcontinentalhotel.com/panel/uploads/product_v/original/3.jpg",
-      "https://www.teymurcontinentalhotel.com/panel/uploads/product_v/original/6.jpg",
-      "https://www.teymurcontinentalhotel.com/panel/uploads/product_v/original/4.jpg",
-      "https://www.teymurcontinentalhotel.com/panel/uploads/product_v/original/5.jpg",
-      "https://www.teymurcontinentalhotel.com/panel/uploads/product_v/original/11.jpg",
+      "/panel/uploads/product_v/original/3.jpg",
+      "/panel/uploads/product_v/original/6.jpg",
+      "/panel/uploads/product_v/original/4.jpg",
+      "/panel/uploads/product_v/original/5.jpg",
+      "/panel/uploads/product_v/original/11.jpg",
     ],
     sections: [
       {
@@ -575,11 +575,11 @@ const DEFAULT_CONTENT: SiteContent = {
         desc: "Teymur Continental Hotel Fitness Merkezi, son teknoloji ekipmanları ve uzman eğitmenleriyle misafirlerimize eksiksiz bir spor deneyimi sunar. Kardiyo alanından ağırlık bölümüne, grup derslerinden kişisel antrenman seanslarına kadar her ihtiyacınıza yanıt veriyoruz.",
         hours: "07:00 – 22:00",
         imgs: [
-          "https://www.teymurcontinentalhotel.com/panel/uploads/product_v/original/3.jpg",
-          "https://www.teymurcontinentalhotel.com/panel/uploads/product_v/original/6.jpg",
-          "https://www.teymurcontinentalhotel.com/panel/uploads/product_v/original/4.jpg",
-          "https://www.teymurcontinentalhotel.com/panel/uploads/product_v/original/5.jpg",
-          "https://www.teymurcontinentalhotel.com/panel/uploads/product_v/original/11.jpg",
+          "/panel/uploads/product_v/original/3.jpg",
+          "/panel/uploads/product_v/original/6.jpg",
+          "/panel/uploads/product_v/original/4.jpg",
+          "/panel/uploads/product_v/original/5.jpg",
+          "/panel/uploads/product_v/original/11.jpg",
         ],
       },
       {
@@ -588,9 +588,9 @@ const DEFAULT_CONTENT: SiteContent = {
         desc: "Geniş kardiyo ve ağırlık alanımızda en son teknoloji spor aletleri ile antrenmanlarınızı yapabilirsiniz. Kişisel eğitmenlerimiz hedeflerinize uygun program hazırlar.",
         hours: "",
         imgs: [
-          "https://www.teymurcontinentalhotel.com/panel/uploads/product_v/original/5.jpg",
-          "https://www.teymurcontinentalhotel.com/panel/uploads/product_v/original/4.jpg",
-          "https://www.teymurcontinentalhotel.com/panel/uploads/product_v/original/3.jpg",
+          "/panel/uploads/product_v/original/5.jpg",
+          "/panel/uploads/product_v/original/4.jpg",
+          "/panel/uploads/product_v/original/3.jpg",
         ],
       },
     ],
@@ -650,11 +650,11 @@ const DEFAULT_CONTENT: SiteContent = {
     gastronomyTitle: "Gaziantep Mutfağı",
     gastronomyDesc: "Gaziantep, 9.000 yıllık mutfak geleneğiyle dünyanın en köklü gastronomi başkentlerinden biridir. Coğrafi işaret tescilli Antep baklavası, dünyaca ünlü Antep fıstığı, ateşte olgunlaşan kebaplar ve sabah sofralarının vazgeçilmezi katmer; her lokma bu kadim şehrin ruhunu taşır.",
     gastronomyImgs: [
-      "https://www.teymurcontinentalhotel.com/panel/uploads/product_v/original/8.jpg",
-      "https://www.teymurcontinentalhotel.com/panel/uploads/product_v/400x400/kahvalti--2.jpg",
-      "https://www.teymurcontinentalhotel.com/panel/uploads/product_v/original/9.jpg",
-      "https://www.teymurcontinentalhotel.com/panel/uploads/product_v/400x400/a-la-carte-ve-cocuk-2.jpg",
-      "https://www.teymurcontinentalhotel.com/panel/uploads/product_v/original/7.jpg",
+      "/panel/uploads/product_v/original/8.jpg",
+      "/panel/uploads/product_v/400x400/kahvalti--2.jpg",
+      "/panel/uploads/product_v/original/9.jpg",
+      "/panel/uploads/product_v/400x400/a-la-carte-ve-cocuk-2.jpg",
+      "/panel/uploads/product_v/original/7.jpg",
     ],
     baklavaLabel: "Lezzet Mirası",
     baklavaTitle: "Baklava Tarihi",
@@ -673,7 +673,7 @@ const DEFAULT_CONTENT: SiteContent = {
     ],
   },
   gallery: {
-    heroImg: "https://www.teymurcontinentalhotel.com/panel/uploads/galleries_v/images/galeri/1.jpg",
+    heroImg: "/panel/uploads/galleries_v/images/galeri/1.jpg",
     heroTitle: "GALERİ",
     photos: [
       { src: BASE_ROOM + "1.jpg",  cat: "Odalar" },
@@ -695,18 +695,18 @@ const DEFAULT_CONTENT: SiteContent = {
       { src: BASE_ROOM + "36.jpg", cat: "Odalar" },
       { src: BASE_ROOM + "41.jpg", cat: "Odalar" },
       { src: BASE_ROOM + "43.jpg", cat: "Odalar" },
-      { src: "https://www.teymurcontinentalhotel.com/panel/uploads/product_v/original/a-la-carte-ve-cocuk-2.jpg", cat: "Restoran" },
-      { src: "https://www.teymurcontinentalhotel.com/panel/uploads/product_v/original/kahvalti--2.jpg",           cat: "Restoran" },
-      { src: "https://www.teymurcontinentalhotel.com/panel/uploads/product_v/original/7.jpg",  cat: "Restoran" },
-      { src: "https://www.teymurcontinentalhotel.com/panel/uploads/product_v/original/8.jpg",  cat: "Restoran" },
-      { src: "https://www.teymurcontinentalhotel.com/panel/uploads/product_v/original/9.jpg",  cat: "Restoran" },
-      { src: "https://www.teymurcontinentalhotel.com/panel/uploads/product_v/original/12.jpg", cat: "Restoran" },
-      { src: "https://www.teymurcontinentalhotel.com/panel/uploads/product_v/original/2.jpg",  cat: "Sağlık" },
-      { src: "https://www.teymurcontinentalhotel.com/panel/uploads/product_v/original/3.jpg",  cat: "Sağlık" },
-      { src: "https://www.teymurcontinentalhotel.com/panel/uploads/product_v/original/4.jpg",  cat: "Sağlık" },
-      { src: "https://www.teymurcontinentalhotel.com/panel/uploads/product_v/original/5.jpg",  cat: "Sağlık" },
-      { src: "https://www.teymurcontinentalhotel.com/panel/uploads/product_v/original/6.jpg",  cat: "Sağlık" },
-      { src: "https://www.teymurcontinentalhotel.com/panel/uploads/product_v/original/11.jpg", cat: "Sağlık" },
+      { src: "/panel/uploads/product_v/original/a-la-carte-ve-cocuk-2.jpg", cat: "Restoran" },
+      { src: "/panel/uploads/product_v/original/kahvalti--2.jpg",           cat: "Restoran" },
+      { src: "/panel/uploads/product_v/original/7.jpg",  cat: "Restoran" },
+      { src: "/panel/uploads/product_v/original/8.jpg",  cat: "Restoran" },
+      { src: "/panel/uploads/product_v/original/9.jpg",  cat: "Restoran" },
+      { src: "/panel/uploads/product_v/original/12.jpg", cat: "Restoran" },
+      { src: "/panel/uploads/product_v/original/2.jpg",  cat: "Sağlık" },
+      { src: "/panel/uploads/product_v/original/3.jpg",  cat: "Sağlık" },
+      { src: "/panel/uploads/product_v/original/4.jpg",  cat: "Sağlık" },
+      { src: "/panel/uploads/product_v/original/5.jpg",  cat: "Sağlık" },
+      { src: "/panel/uploads/product_v/original/6.jpg",  cat: "Sağlık" },
+      { src: "/panel/uploads/product_v/original/11.jpg", cat: "Sağlık" },
     ],
     videos: [
       { embedId: "dQw4w9WgXcQ", thumb: "https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg", title: "Teymur Continental Hotel — Tanıtım Filmi" },
@@ -731,9 +731,9 @@ const DEFAULT_CONTENT: SiteContent = {
       { id: "dining",   side: "left",  href: "#",           labelTr: "Restoran",   labelEn: "Dining",   labelAr: "المطعم",
         dropdown: { headingTr: "Restoran & Bar", headingEn: "Dining & Bar", headingAr: "المطعم والبار", descTr: "Gaziantep'in eşsiz gastronomi mirasından ilham alan menülerimizle unutulmaz bir lezzet yolculuğuna çıkın.", descEn: "Embark on a culinary journey inspired by Gaziantep's rich gastronomic heritage.", descAr: "انطلق في رحلة طهوية مستوحاة من إرث غازيانتيب الغني.", viewAllTr: "", viewAllEn: "", viewAllAr: "", viewAllHref: "/restoran",
           photos: [
-            { src: "https://www.teymurcontinentalhotel.com/panel/uploads/product_v/400x400/a-la-carte-ve-cocuk-2.jpg", labelTr: "Sof Restaurant",     labelEn: "Sof Restaurant", labelAr: "مطعم سوف",     href: "/restoran/sof-restaurant" },
-            { src: "https://www.teymurcontinentalhotel.com/panel/uploads/product_v/400x400/7.jpg",                    labelTr: "Bar & Lounge",       labelEn: "Bar & Lounge",   labelAr: "البار والصالة", href: "/restoran/bar-lounge" },
-            { src: "https://www.teymurcontinentalhotel.com/panel/uploads/product_v/400x400/kahvalti--2.jpg",          labelTr: "Açık Büfe Kahvaltı", labelEn: "Breakfast",      labelAr: "الإفطار",       href: "/restoran/kahvalti" },
+            { src: "/panel/uploads/product_v/400x400/a-la-carte-ve-cocuk-2.jpg", labelTr: "Sof Restaurant",     labelEn: "Sof Restaurant", labelAr: "مطعم سوف",     href: "/restoran/sof-restaurant" },
+            { src: "/panel/uploads/product_v/400x400/7.jpg",                    labelTr: "Bar & Lounge",       labelEn: "Bar & Lounge",   labelAr: "البار والصالة", href: "/restoran/bar-lounge" },
+            { src: "/panel/uploads/product_v/400x400/kahvalti--2.jpg",          labelTr: "Açık Büfe Kahvaltı", labelEn: "Breakfast",      labelAr: "الإفطار",       href: "/restoran/kahvalti" },
           ],
         },
       },
@@ -750,8 +750,8 @@ const DEFAULT_CONTENT: SiteContent = {
       { id: "wellness", side: "left",  href: "#",           labelTr: "Sağlık",    labelEn: "Wellness", labelAr: "العافية",
         dropdown: { headingTr: "Sağlık Kulübü", headingEn: "Health Club", headingAr: "نادي الصحة", descTr: "Antik hamam ritüelleri ve modern spa tedavileriyle beden ve ruhunuzu yenileyin.", descEn: "Renew body and soul with ancient hammam rituals and modern spa treatments.", descAr: "جدد جسدك وروحك بطقوس الحمام التركي القديمة.", viewAllTr: "Sağlığı Keşfet", viewAllEn: "Explore Health", viewAllAr: "استكشف الصحة", viewAllHref: "/saglik",
           photos: [
-            { src: "https://www.teymurcontinentalhotel.com/panel/uploads/product_v/400x400/5.jpg",  labelTr: "Spa & Hamam",      labelEn: "Spa & Hammam",       labelAr: "سبا والحمام التركي",    href: "/saglik/spa-hamam" },
-            { src: "https://www.teymurcontinentalhotel.com/panel/uploads/product_v/400x400/11.jpg", labelTr: "Fitness Merkezi", labelEn: "Fitness Center",     labelAr: "مركز اللياقة البدنية", href: "/saglik/fitness" },
+            { src: "/panel/uploads/product_v/400x400/5.jpg",  labelTr: "Spa & Hamam",      labelEn: "Spa & Hammam",       labelAr: "سبا والحمام التركي",    href: "/saglik/spa-hamam" },
+            { src: "/panel/uploads/product_v/400x400/11.jpg", labelTr: "Fitness Merkezi", labelEn: "Fitness Center",     labelAr: "مركز اللياقة البدنية", href: "/saglik/fitness" },
           ],
         },
       },
@@ -1048,7 +1048,7 @@ const STORAGE_KEY = "teymur_cms_content";
 const VERSION_KEY = "teymur_cms_version";
 // Yeni icerik/gorsel deploy edildiginde bu degeri artir; boylece tarayicilardaki
 // eski localStorage onbellegi otomatik temizlenir ve guncel varsayilanlar yuklenir.
-const CONTENT_VERSION = "2026-06-25-2";
+const CONTENT_VERSION = "2026-07-01-local-assets";
 
 function loadContent(): SiteContent {
   try {

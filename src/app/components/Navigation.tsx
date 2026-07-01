@@ -50,9 +50,9 @@ function buildMenu(t: (k: string) => string, lang: string): { left: NavLink[]; r
         viewHref: "/restoran",
       },
       photos: [
-        { src: "https://www.teymurcontinentalhotel.com/panel/uploads/product_v/400x400/a-la-carte-ve-cocuk-2.jpg", label: l("Sof Restaurant",      "Sof Restaurant",  "مطعم سوف"),       href: "/restoran/sof-restaurant" },
-        { src: "https://www.teymurcontinentalhotel.com/panel/uploads/product_v/400x400/7.jpg",                    label: l("Bar & Lounge",        "Bar & Lounge",    "البار والصالة"),   href: "/restoran/bar-lounge"     },
-        { src: "https://www.teymurcontinentalhotel.com/panel/uploads/product_v/400x400/kahvalti--2.jpg",          label: l("Açık Büfe Kahvaltı",  "Breakfast",       "الإفطار"),         href: "/restoran/kahvalti"        },
+        { src: "/panel/uploads/product_v/400x400/a-la-carte-ve-cocuk-2.jpg", label: l("Sof Restaurant",      "Sof Restaurant",  "مطعم سوف"),       href: "/restoran/sof-restaurant" },
+        { src: "/panel/uploads/product_v/400x400/7.jpg",                    label: l("Bar & Lounge",        "Bar & Lounge",    "البار والصالة"),   href: "/restoran/bar-lounge"     },
+        { src: "/panel/uploads/product_v/400x400/kahvalti--2.jpg",          label: l("Açık Büfe Kahvaltı",  "Breakfast",       "الإفطار"),         href: "/restoran/kahvalti"        },
       ],
     },
     {
@@ -64,10 +64,10 @@ function buildMenu(t: (k: string) => string, lang: string): { left: NavLink[]; r
         viewHref: "/etkinlikler",
       },
       photos: [
-        { src: "https://www.teymurcontinentalhotel.com/panel/uploads/product_v/400x400/beylerbeyi.jpg",                              label: l("Beylerbeyi Balo Ve Kongre Salonu", "Beylerbeyi Ballroom",      "قاعة بيليربيي"),       href: "/etkinlikler/beylerbeyi-balo-ve-kongre-salonu" },
-        { src: "https://www.teymurcontinentalhotel.com/panel/uploads/product_v/400x400/hayad-3.jpg",                                 label: l("Hayad Salonu",                    "Hayad Hall",               "قاعة هياد"),           href: "/etkinlikler/hayad-salonu"                    },
-        { src: "https://www.teymurcontinentalhotel.com/panel/uploads/product_v/400x400/5e6d3d45-aac1-4484-8f40-803b86003c3b.jpg",   label: l("Continental House Salonu",        "Continental House Hall",   "قاعة كونتيننتال هاوس"), href: "/etkinlikler/continental-house-salonu"        },
-        { src: "https://www.teymurcontinentalhotel.com/panel/uploads/product_v/400x400/a.jpg",                                       label: l("İpekyolu Salonu",                 "İpekyolu Hall",            "قاعة إيبكيولو"),       href: "/etkinlikler/ipekyolu-salonu"                 },
+        { src: "/panel/uploads/product_v/400x400/beylerbeyi.jpg",                              label: l("Beylerbeyi Balo Ve Kongre Salonu", "Beylerbeyi Ballroom",      "قاعة بيليربيي"),       href: "/etkinlikler/beylerbeyi-balo-ve-kongre-salonu" },
+        { src: "/panel/uploads/product_v/400x400/hayad-3.jpg",                                 label: l("Hayad Salonu",                    "Hayad Hall",               "قاعة هياد"),           href: "/etkinlikler/hayad-salonu"                    },
+        { src: "/panel/uploads/product_v/400x400/5e6d3d45-aac1-4484-8f40-803b86003c3b.jpg",   label: l("Continental House Salonu",        "Continental House Hall",   "قاعة كونتيننتال هاوس"), href: "/etkinlikler/continental-house-salonu"        },
+        { src: "/panel/uploads/product_v/400x400/a.jpg",                                       label: l("İpekyolu Salonu",                 "İpekyolu Hall",            "قاعة إيبكيولو"),       href: "/etkinlikler/ipekyolu-salonu"                 },
       ],
     },
     {

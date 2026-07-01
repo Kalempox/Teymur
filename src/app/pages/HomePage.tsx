@@ -502,7 +502,7 @@ function Experience360() {
 
           {/* Direct link fallback */}
           <a
-            href="https://www.teymurcontinentalhotel.com/360/"
+            href="/360/index.html"
             target="_blank"
             rel="noopener noreferrer"
             style={{
@@ -753,7 +753,10 @@ function GallerySection() {
           cursor: dragging ? "grabbing" : "grab",
           userSelect: "none",
           WebkitOverflowScrolling: "touch",
-          scrollSnapType: "x mandatory",
+          // Sürükleme sırasında snap kapalı olmalı; aksi halde zorunlu snap
+          // her mousemove'da pozisyonu geri yapıştırıp kaymayı takılmaya çevirir.
+          scrollSnapType: dragging ? "none" : "x mandatory",
+          scrollBehavior: "auto",
         }}
       >
         {GALLERY.map((g, i) => (

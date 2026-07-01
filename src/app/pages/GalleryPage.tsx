@@ -5,9 +5,9 @@ const DARK  = "#1c1209";
 const GOLD  = "#c0a882";
 const WHITE = "#ffffff";
 
-const ROOM  = "https://www.teymurcontinentalhotel.com/panel/uploads/rooms_v/original/";
-const PROD  = "https://www.teymurcontinentalhotel.com/panel/uploads/product_v/original/";
-const GAL   = "https://www.teymurcontinentalhotel.com/panel/uploads/galleries_v/images/galeri/";
+const ROOM  = "/panel/uploads/rooms_v/original/";
+const PROD  = "/panel/uploads/product_v/original/";
+const GAL   = "/panel/uploads/galleries_v/images/galeri/";
 
 interface Img { src: string; cat: string; }
 interface Vid { thumb: string; embedId: string; title: string; }

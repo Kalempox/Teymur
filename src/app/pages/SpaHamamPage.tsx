@@ -9,7 +9,7 @@ const GOLD   = "#c0a882";
 const WHITE  = "#ffffff";
 const NAVY   = "#ffffff";
 
-const ORIG = "https://www.teymurcontinentalhotel.com/panel/uploads/product_v/original/";
+const ORIG = "/panel/uploads/product_v/original/";
 
 // ── Scroll-reveal hook ────────────────────────────────────────────────────────
 function useReveal() {
